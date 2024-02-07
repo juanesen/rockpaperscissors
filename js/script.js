@@ -17,7 +17,23 @@ function randomMachineSelection() {
 machineSelection = randomMachineSelection();
 
 // User is prompt for the option they want
-prompt("Rock, Paper or Scissors beach boi ?");
+// User's option is stored in userSelection as no caps 
+userSelection = prompt("Rock, Paper or Scissors beach boi ?");
+userSelectionLowerCase = userSelection.toLowerCase();
+console.log(userSelectionLowerCase);
 
-// User's option is stored in userSelection
+// only let user enter Rock, Paper or Scissors
+if (userSelectionLowerCase == "rock") {
+     console.log("you have chosen rock")
+} else if (userSelectionLowerCase == "paper") {
+     console.log("you have chosen paper")
+} else if (userSelectionLowerCase == "scissors") {
+     console.log("you have chosen scissors")
+} else {
+    console.log("you didn't choose anything beach boi");
+}
+
+console.log(userSelectionLowerCase);
+
+
 // once each party has chosen the right one then we see who won 
